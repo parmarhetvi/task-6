@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - Hetvi Parmar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <small class="error" id="messageError"></small>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMessage" class="success"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
